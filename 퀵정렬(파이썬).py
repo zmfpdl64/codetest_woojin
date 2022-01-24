@@ -10,6 +10,8 @@ def  quick_sorted(array):
     right_side = [x for x in arr if pivot < x]
 
     return quick_sorted(left_side) + [pivot] + quick_sorted(right_side)
-
-
 print(quick_sorted(array))
+# right_side [7, 9, 6, 8] [5] left_side [0, 3, 1, 2, 4]
+# right_side [[6],[7],[9,8]] left_side [[0], [3,1,2,4]]
+# right_side [[6],[7],[8],[9]] left_side [[0],[[1,2],[3],[4]]
+# right_side [[6],[7],[8],[9]] left_side [[0],[1],[2],[3],[4]] 
